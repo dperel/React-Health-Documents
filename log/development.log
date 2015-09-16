@@ -1,0 +1,972 @@
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateComments (20150916174437)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "author" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150916174437"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Malcolm Becker"], ["comment", "cliche moon vegan artisan salvia trust fund DIY food truck twee lo-fi"], ["created_at", "2015-09-16 17:45:44.773087"], ["updated_at", "2015-09-16 17:45:44.773087"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Christa Senger"], ["comment", "Wes Anderson skateboard Banksy etsy dreamcatcher echo park Austin wolf 8-bit trust fund"], ["created_at", "2015-09-16 17:45:44.779167"], ["updated_at", "2015-09-16 17:45:44.779167"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Asia Reichert"], ["comment", "thundercats photo booth retro before they sold out mlkshk Austin beard iPhone fanny pack lo-fi"], ["created_at", "2015-09-16 17:45:44.784792"], ["updated_at", "2015-09-16 17:45:44.784792"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Sibyl Aufderhar"], ["comment", "synth Brooklyn Shoreditch hoodie single-origin coffee art skateboard salvia locavore before they sold out"], ["created_at", "2015-09-16 17:45:44.790224"], ["updated_at", "2015-09-16 17:45:44.790224"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Naomi Dickinson"], ["comment", "fap artisan sartorial cliche keytar whatever PBR single-origin coffee twee hoodie"], ["created_at", "2015-09-16 17:45:44.794890"], ["updated_at", "2015-09-16 17:45:44.794890"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Prince Kuhic"], ["comment", "iPhone Four Loko party readymade artisan before they sold out locavore quinoa fanny pack single-origin coffee"], ["created_at", "2015-09-16 17:45:44.799445"], ["updated_at", "2015-09-16 17:45:44.799445"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Pearline Moen"], ["comment", "Brooklyn DIY master cleanse wolf ethical blog viral Shoreditch locavore put a bird on it"], ["created_at", "2015-09-16 17:45:44.803959"], ["updated_at", "2015-09-16 17:45:44.803959"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Everette Carter"], ["comment", "ethical next level party PBR messenger bag dreamcatcher locavore leggings master cleanse tattooed"], ["created_at", "2015-09-16 17:45:44.808529"], ["updated_at", "2015-09-16 17:45:44.808529"]]
+  [1m[36m (5.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Alayna Cummerata"], ["comment", "fixie messenger bag Williamsburg you probably haven't heard of them VHS chambray blog cred tumblr synth"], ["created_at", "2015-09-16 17:45:44.815791"], ["updated_at", "2015-09-16 17:45:44.815791"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Ara Stoltenberg"], ["comment", "messenger bag Four Loko jean shorts master cleanse 8-bit +1 letterpress party irony photo booth"], ["created_at", "2015-09-16 17:45:44.820322"], ["updated_at", "2015-09-16 17:45:44.820322"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 13:46:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/comments_controller.rb:2:in `<class:CommentsController>'
+  app/controllers/comments_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (11.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.9ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.7ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 13:46:01 -0400
+
+ActionController::RoutingError (The controller-level `respond_to' feature has been extracted to the `responders` gem. Add it to your Gemfile to continue using this feature:
+  gem 'responders', '~> 2.0'
+Consult the Rails upgrade guide for details.):
+  app/controllers/comments_controller.rb:2:in `<class:CommentsController>'
+  app/controllers/comments_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.1ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (107.6ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 13:46:24 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 21ms (Views: 4.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 13:49:47 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2205ms (Views: 2196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/comments.self-712266c687d71627fd20ece1955de49ca06c8cff591fe2f9c8c2916fed1d4254.js?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 13:49:50 -0400
+
+
+Started GET "/" for ::1 at 2015-09-16 13:50:08 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 913ms (Views: 911.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 13:50:09 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 13:50:09 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (1.1ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 19ms (Views: 6.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/comments.json" for ::1 at 2015-09-16 13:50:15 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"Commentor", "comment"=>"Comment"}}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Commentor"], ["comment", "Comment"], ["created_at", "2015-09-16 17:50:15.740151"], ["updated_at", "2015-09-16 17:50:15.740151"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 28ms (Views: 4.9ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 13:50:15 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 5ms (Views: 2.2ms | ActiveRecord: 0.2ms)
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for ::1 at 2015-09-16 17:44:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 433ms (Views: 418.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:44:33 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 42.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:44:33 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (2.0ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 27ms (Views: 9.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:45:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:45:40 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:48:47 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 185ms (Views: 184.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:48:47 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-3a959e5e66b6775eae8cf78b3ffd9c45305e1ff4e91d334f681b0bfc6cbeca1e.css?body=1" for ::1 at 2015-09-16 17:48:47 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:48:47 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:49:00 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/comments.self-3a959e5e66b6775eae8cf78b3ffd9c45305e1ff4e91d334f681b0bfc6cbeca1e.css?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:49:00 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:49:00 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:49:33 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 68ms (Views: 66.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-cc23ec1e2bbb12fb4281bf1242ca868a5918b27cf777b828df7ba1e35ff47c9c.css?body=1" for ::1 at 2015-09-16 17:49:33 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:49:33 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:49:34 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:49:34 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:50:16 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 66ms (Views: 65.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-5745ffa05ef79bf7954ca3203804bcf48f2a0757d7e24d540a85b7e108f96018.css?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:50:16 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:50:16 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:50:18 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-5745ffa05ef79bf7954ca3203804bcf48f2a0757d7e24d540a85b7e108f96018.css?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:50:18 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:50:19 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:50:33 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 62ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-7a92a6f202d09bafdf03c6c9ab87cf3b49f79f8d59f74470d2a651d1afdda9d4.css?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:50:33 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:50:33 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:50:45 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-71029d43f8b8e21601ed0add3469a1560430ca11de3e1a137e19dc7a357a7efc.css?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:50:45 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:50:45 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:52:26 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 71ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/comments.self-dc21af34bd2c2f07847d9967d160c1c89da6512504d48473268cffd395d21428.css?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:52:26 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:52:26 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 9ms (Views: 2.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:52:30 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 55.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-1ecef1477c5c9184584a4ba4ea222714f5fa3da91de74ef3eb38c946a2788b9f.css?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:52:30 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:52:30 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:52:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 62ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-68ad47b9e57ccfc477c178ff91b5986ffd2cdaf9e68907d51704d60eee14e880.css?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:52:40 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:52:40 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 17:52:50 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/comments.self-b3ca8948bdb2a7fd518fa702f78a5867dec07aa0d2b413532ad457ad6b63e53b.css?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 17:52:50 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 17:52:50 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToRecords (20150916215623)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToRecords (20150916215623)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToRecords (20150916215623)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToRecords (20150916215623)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToComments (20150916215623)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "comments" ADD "document" blob[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150916215623"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-09-16 18:00:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 231ms (Views: 223.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:00:03 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 12ms (Views: 6.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comments.json" for ::1 at 2015-09-16 18:00:10 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"Commentator", "comment"=>"Commentation"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "Commentator"], ["comment", "Commentation"], ["created_at", "2015-09-16 22:00:10.623155"], ["updated_at", "2015-09-16 22:00:10.623155"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 19ms (Views: 4.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:00:10 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 18:00:12 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 59ms (Views: 58.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-b3ca8948bdb2a7fd518fa702f78a5867dec07aa0d2b413532ad457ad6b63e53b.css?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/comments.self-37cef9d157641975816d117fc04eea51eecf30c7aabc516dca49cca3b96c31b6.js?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 18:00:12 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:00:12 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to AddDocumentToComments (20150916215623)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TEMPORARY TABLE "acomments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "author" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "document" blob) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "comments"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (1, 'cliche moon vegan artisan salvia trust fund DIY food truck twee lo-fi', 'Malcolm Becker', '2015-09-16 17:45:44.773087', '2015-09-16 17:45:44.773087', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (2, 'Wes Anderson skateboard Banksy etsy dreamcatcher echo park Austin wolf 8-bit trust fund', 'Christa Senger', '2015-09-16 17:45:44.779167', '2015-09-16 17:45:44.779167', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (3, 'thundercats photo booth retro before they sold out mlkshk Austin beard iPhone fanny pack lo-fi', 'Asia Reichert', '2015-09-16 17:45:44.784792', '2015-09-16 17:45:44.784792', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (4, 'synth Brooklyn Shoreditch hoodie single-origin coffee art skateboard salvia locavore before they sold out', 'Sibyl Aufderhar', '2015-09-16 17:45:44.790224', '2015-09-16 17:45:44.790224', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (5, 'fap artisan sartorial cliche keytar whatever PBR single-origin coffee twee hoodie', 'Naomi Dickinson', '2015-09-16 17:45:44.794890', '2015-09-16 17:45:44.794890', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (6, 'iPhone Four Loko party readymade artisan before they sold out locavore quinoa fanny pack single-origin coffee', 'Prince Kuhic', '2015-09-16 17:45:44.799445', '2015-09-16 17:45:44.799445', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (7, 'Brooklyn DIY master cleanse wolf ethical blog viral Shoreditch locavore put a bird on it', 'Pearline Moen', '2015-09-16 17:45:44.803959', '2015-09-16 17:45:44.803959', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (8, 'ethical next level party PBR messenger bag dreamcatcher locavore leggings master cleanse tattooed', 'Everette Carter', '2015-09-16 17:45:44.808529', '2015-09-16 17:45:44.808529', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (9, 'fixie messenger bag Williamsburg you probably haven''t heard of them VHS chambray blog cred tumblr synth', 'Alayna Cummerata', '2015-09-16 17:45:44.815791', '2015-09-16 17:45:44.815791', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (10, 'messenger bag Four Loko jean shorts master cleanse 8-bit +1 letterpress party irony photo booth', 'Ara Stoltenberg', '2015-09-16 17:45:44.820322', '2015-09-16 17:45:44.820322', NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (11, 'Comment', 'Commentor', '2015-09-16 17:50:15.740151', '2015-09-16 17:50:15.740151', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "acomments" ("id","comment","author","created_at","updated_at","document") VALUES (12, 'Commentation', 'Commentator', '2015-09-16 22:00:10.623155', '2015-09-16 22:00:10.623155', NULL)[0m
+  [1m[35m (2.7ms)[0m  DROP TABLE "comments"
+  [1m[36m (0.2ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "author" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.6ms)[0m  SELECT * FROM "acomments"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (1, 'cliche moon vegan artisan salvia trust fund DIY food truck twee lo-fi', 'Malcolm Becker', '2015-09-16 17:45:44.773087', '2015-09-16 17:45:44.773087')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (2, 'Wes Anderson skateboard Banksy etsy dreamcatcher echo park Austin wolf 8-bit trust fund', 'Christa Senger', '2015-09-16 17:45:44.779167', '2015-09-16 17:45:44.779167')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (3, 'thundercats photo booth retro before they sold out mlkshk Austin beard iPhone fanny pack lo-fi', 'Asia Reichert', '2015-09-16 17:45:44.784792', '2015-09-16 17:45:44.784792')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (4, 'synth Brooklyn Shoreditch hoodie single-origin coffee art skateboard salvia locavore before they sold out', 'Sibyl Aufderhar', '2015-09-16 17:45:44.790224', '2015-09-16 17:45:44.790224')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (5, 'fap artisan sartorial cliche keytar whatever PBR single-origin coffee twee hoodie', 'Naomi Dickinson', '2015-09-16 17:45:44.794890', '2015-09-16 17:45:44.794890')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (6, 'iPhone Four Loko party readymade artisan before they sold out locavore quinoa fanny pack single-origin coffee', 'Prince Kuhic', '2015-09-16 17:45:44.799445', '2015-09-16 17:45:44.799445')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (7, 'Brooklyn DIY master cleanse wolf ethical blog viral Shoreditch locavore put a bird on it', 'Pearline Moen', '2015-09-16 17:45:44.803959', '2015-09-16 17:45:44.803959')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (8, 'ethical next level party PBR messenger bag dreamcatcher locavore leggings master cleanse tattooed', 'Everette Carter', '2015-09-16 17:45:44.808529', '2015-09-16 17:45:44.808529')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (9, 'fixie messenger bag Williamsburg you probably haven''t heard of them VHS chambray blog cred tumblr synth', 'Alayna Cummerata', '2015-09-16 17:45:44.815791', '2015-09-16 17:45:44.815791')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (10, 'messenger bag Four Loko jean shorts master cleanse 8-bit +1 letterpress party irony photo booth', 'Ara Stoltenberg', '2015-09-16 17:45:44.820322', '2015-09-16 17:45:44.820322')
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (11, 'Comment', 'Commentor', '2015-09-16 17:50:15.740151', '2015-09-16 17:50:15.740151')[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "comments" ("id","comment","author","created_at","updated_at") VALUES (12, 'Commentation', 'Commentator', '2015-09-16 22:00:10.623155', '2015-09-16 22:00:10.623155')
+  [1m[36m (0.8ms)[0m  [1mDROP TABLE "acomments"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?  [["version", "20150916215623"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocumentToComments (20150916215623)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDocToComments (20150916215623)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "comments" ADD "doc" blob[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150916215623"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for ::1 at 2015-09-16 18:06:31 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1710ms (Views: 1700.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-b3ca8948bdb2a7fd518fa702f78a5867dec07aa0d2b413532ad457ad6b63e53b.css?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/comments.self-e8efe919688915e0a0cdabeb46bcf17d6c573e1afc5cbdf7f592c09ae84083c9.js?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 18:06:33 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:06:33 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 15ms (Views: 6.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/comments.json" for ::1 at 2015-09-16 18:06:51 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"David", "comment"=>"Your health Report", "doc"=>"HEALTHHEALTH HEALTHHEALTHHEALTHHEALTHHEALTHHEALTHHEALTH"}}
+Unpermitted parameter: doc
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["author", "David"], ["comment", "Your health Report"], ["created_at", "2015-09-16 22:06:51.950495"], ["updated_at", "2015-09-16 22:06:51.950495"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 18ms (Views: 1.9ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:06:51 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 18:07:36 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 848ms (Views: 847.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-b3ca8948bdb2a7fd518fa702f78a5867dec07aa0d2b413532ad457ad6b63e53b.css?body=1" for ::1 at 2015-09-16 18:07:36 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 18:07:36 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/assets/comments.self-8c2d88bd774432404ed9ce85e76a11f6d6b3d8576c97ee64363e99a30837ec18.js?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 18:07:37 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:07:37 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.8ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 24ms (Views: 9.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 18:08:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 874ms (Views: 872.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/comments.json" for ::1 at 2015-09-16 18:08:41 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"Dr. Starbucks", "comment"=>"Coffee!", "doc"=>"CoffeeCoffeeCoffeeCoffeeCoffeeCoffeeCoffeeCoffeeCoffeeCoffee"}}
+Unpermitted parameter: doc
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Dr. Starbucks"], ["comment", "Coffee!"], ["created_at", "2015-09-16 22:08:41.065218"], ["updated_at", "2015-09-16 22:08:41.065218"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Completed 201 Created in 48ms (Views: 3.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/comments.self-b3ca8948bdb2a7fd518fa702f78a5867dec07aa0d2b413532ad457ad6b63e53b.css?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/comments.self-6ac9d5b2b10ce0fa3a297078cddfca8c6726c265386a8ead1128a2a3b10c66cc.js?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 18:08:41 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:08:41 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/comments.json" for ::1 at 2015-09-16 18:09:24 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"Dr. Sbux", "comment"=>"More Coffee!", "doc"=>"More More More More More More More More More More More"}}
+Unpermitted parameter: doc
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["author", "Dr. Sbux"], ["comment", "More Coffee!"], ["created_at", "2015-09-16 22:09:24.205361"], ["updated_at", "2015-09-16 22:09:24.205361"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Completed 201 Created in 12ms (Views: 0.6ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:09:24 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-16 18:09:52 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments.self-b3ca8948bdb2a7fd518fa702f78a5867dec07aa0d2b413532ad457ad6b63e53b.css?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/home.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/comments.self-6ac9d5b2b10ce0fa3a297078cddfca8c6726c265386a8ead1128a2a3b10c66cc.js?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-09-16 18:09:52 -0400
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:09:52 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comments.json" for ::1 at 2015-09-16 18:10:23 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"Dr. Barista", "comment"=>"Frappucino for your health", "doc"=>"SUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugarSUGARsugarSugar"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "comments" ("author", "comment", "doc", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["author", "Dr. Barista"], ["comment", "Frappucino for your health"], ["doc", "<330 bytes of binary data>"], ["created_at", "2015-09-16 22:10:23.347424"], ["updated_at", "2015-09-16 22:10:23.347424"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 10ms (Views: 0.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/comments.json" for ::1 at 2015-09-16 18:10:23 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 5ms (Views: 1.8ms | ActiveRecord: 0.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" DESC LIMIT 1[0m
+  [1m[35mComment Load (0.4ms)[0m  SELECT  "comments".* FROM "comments"  ORDER BY "comments"."id" DESC LIMIT 1
