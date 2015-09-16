@@ -1,3 +1,4 @@
+
 class CommentsController < ApplicationController
   respond_to :json
 
@@ -10,7 +11,7 @@ class CommentsController < ApplicationController
   end
 
   def show
-    @comment = Comment.find(comment_params)
+    @comment = Comment.find(link_params["id"])
   end
 
   private
@@ -18,4 +19,9 @@ class CommentsController < ApplicationController
   def comment_params
     params.require(:comment).permit(:author, :comment, :doc, :id)
   end
+
+  def link_params
+    params.permit(:id)
+  end
+
 end

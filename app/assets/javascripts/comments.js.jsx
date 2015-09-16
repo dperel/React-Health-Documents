@@ -1,5 +1,7 @@
 
 var Comment = React.createClass({
+  
+
   render: function () {
 
     return (
@@ -7,10 +9,11 @@ var Comment = React.createClass({
         <h2 className="commentAuthor">
           {this.props.author}
         </h2>
-          Comment aka record #{this.props.id}.
+          Comment aka record #{this.props.url}.
           <p>
           {this.props.comment}
           </p>
+          <a href={this.props.url}>link</a>
       </div>
       );
   }
@@ -20,7 +23,7 @@ var CommentList = React.createClass({
   render: function () {
     var commentNodes = this.props.comments.map(function (comment, index) {
       return (
-        <Comment author={comment.author} comment={comment.comment} doc={comment.doc} id={comment.id} key={index} />
+        <Comment author={comment.author} comment={comment.comment} doc={comment.doc} url={"/comments/"+String(comment.id)} key={index} />
         );
     });
 
