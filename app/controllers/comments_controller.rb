@@ -9,9 +9,13 @@ class CommentsController < ApplicationController
     respond_with Comment.create(comment_params)
   end
 
+  def show
+    @comment = Comment.find(comment_params)
+  end
+
   private
 
   def comment_params
-    params.require(:comment).permit(:author, :comment, :doc)
+    params.require(:comment).permit(:author, :comment, :doc, :id)
   end
 end

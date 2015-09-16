@@ -6,7 +6,8 @@ namespace :db do
     10.times do
       Comment.create(
         author: FFaker::Name.first_name + " " + FFaker::Name.last_name,
-        comment: FFaker::HipsterIpsum.words(10).join(' ')
+        comment: FFaker::HipsterIpsum.words(10).join(' '),
+        doc: FFaker::HipsterIpsum.words(50).join(',  #')
       )
     end
   end
