@@ -17289,3 +17289,523 @@ Started GET "/comments" for ::1 at 2015-09-17 14:34:10 -0400
 Processing by CommentsController#index as JSON
   [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
 Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 14:38:05 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 945ms (Views: 943.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/assets/comments-94e5fa78ec5572b28400d52f8aeb50fd.js?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/assets/application-7379b2f1ea4f21169f5c3adfef34cddf.js?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 14:38:06 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 14:38:07 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 20ms (Views: 8.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 14:38:29 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 799ms (Views: 798.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/assets/application-cf364a49e2d1cb2652968f3905af08fb.js?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/assets/comments-543408dbb3a98e3234e6533ce935e3f6.js?body=1" for ::1 at 2015-09-17 14:38:30 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 14:38:30 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 18ms (Views: 8.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 14:39:14 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 753ms (Views: 752.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/assets/application-96b4dbdd19eaf3333948617f847bd76a.js?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/assets/comments-3b5c0e78cca4407f4395d121dcb90c6f.js?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 14:39:15 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 14:39:15 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 19ms (Views: 10.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 14:40:14 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 616ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (64:24)
+  62 |     var filterRegExp = new RegExp (filterText);
+  63 |     var filteredComments = new Array
+> 64 |     var filteredComments.push(this.state.comments.map(function (comment, index) {
+     |                         ^
+  65 |     if (comment.author.match(filterRegExp)||(comment.comment.match(filterRegExp)) || (comment.fingerprint.match(filterRegExp))){
+  66 | 
+  67 |         return (
+  (in /Users/davidperel/Code/react-with-comment-form/React-Health-Documents/app/assets/javascripts/comments.js.jsx)):
+    3: <head>
+    4:   <title>ReactWithCommentForm</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__2185443830065613980_70192075282020'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.1ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (73.0ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 17:54:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 1589ms (Views: 1576.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 17:54:22 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments-5139469fa1ad41015313e268adfc3ec6.js?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/assets/application-0ab23ee2396ddac1d69d33c60a46ea4a.js?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 17:54:22 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 17:54:23 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (2.5ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 32ms (Views: 19.0ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 17:54:23 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 17:55:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 774ms (Views: 773.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/assets/application-9e460f79bfd09f3435d155ae0b671a79.js?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/assets/comments-027bb52887ccf7cf80ca04a47e5906ba.js?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 17:55:41 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 17:55:41 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 15ms (Views: 8.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:01:46 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 810ms (Views: 809.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments-da1da89e7b98e36ce0c7561b66e73c37.js?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/assets/application-90a8eda036fe3544e640314c90be4ba3.js?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:01:47 -0400
+
+
+Started GET "/" for ::1 at 2015-09-17 18:01:55 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 644ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (29:11)
+  27 |     var commentNodes = this.props.comments.map(function (comment, index) {
+  28 |       return (
+> 29 |            debugger;
+     |            ^
+  30 |         <Comment author={comment.author} comment={comment.comment} id={comment.id} url={"/comments/"+String(comment.id)} prior_matches={comment.prior_matches} blockchainURL={"www.blocktrail.com/"+comment.fingerprint} created_at={comment.created_at}key={index} />
+  31 |         );
+  32 |     });
+  (in /Users/davidperel/Code/react-with-comment-form/React-Health-Documents/app/assets/javascripts/comments.js.jsx)):
+    3: <head>
+    4:   <title>ReactWithCommentForm</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__643322686760401261_70204399361540'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (91.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (194.1ms)
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:01:56 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 40ms (Views: 28.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:02:12 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 807ms (Views: 806.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments-795aef2654c4549a9818cefc8873ae3e.js?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/assets/application-b338446e252484d348cb98f0f36fa9c6.js?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:02:13 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:02:13 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (1.0ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 18ms (Views: 9.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:02:47 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 766ms (Views: 765.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments-2a96a851b206e82b99dc150c80faa97c.js?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/assets/application-7129bece6d276b25b9e0a01a437485e4.js?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:02:48 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:02:48 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 19ms (Views: 11.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:05:18 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 48.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/assets/comments-2a96a851b206e82b99dc150c80faa97c.js?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/assets/application-7129bece6d276b25b9e0a01a437485e4.js?body=1" for ::1 at 2015-09-17 18:05:18 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:05:19 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 14ms (Views: 7.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:06:40 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 627ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (SyntaxError: unknown: Unexpected token (79:3)
+  77 |     this.setState({comments: newComments});
+  78 |   }.bind(this))      
+> 79 |   });
+     |    ^
+  80 | },
+  81 | 
+  82 |   handleCommentSubmit: function(comment) {
+  (in /Users/davidperel/Code/react-with-comment-form/React-Health-Documents/app/assets/javascripts/comments.js.jsx)):
+    3: <head>
+    4:   <title>ReactWithCommentForm</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__643322686760401261_70204399361540'
+
+
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.6ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.2ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/davidperel/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (81.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:07:01 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 766ms (Views: 764.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-463dbe987a71bf311e2810e32f05f52a.js?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/assets/comments-eec5e0f262508ae3b66ff5688f82d8f0.js?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:07:02 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:07:02 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 17ms (Views: 9.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:07:30 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 761ms (Views: 760.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/assets/comments-031f0cca98aad7bb63c767f840c234eb.js?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/assets/application-f48e44586f1441470926a80daadc9006.js?body=1" for ::1 at 2015-09-17 18:07:30 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:07:31 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:08:06 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 770ms (Views: 769.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/assets/application-b0df3c7a9f8e219bfcc5e39edafd5746.js?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/assets/comments-9c97ef8539f3c5b9f7b35609b6cef8f2.js?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:08:07 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:08:07 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 0.6ms)

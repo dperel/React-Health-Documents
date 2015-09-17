@@ -1,6 +1,7 @@
 
 var Comment = React.createClass({
   render: function () {
+    debugger;
     return (
       <div className="comment">
         <h2 className="commentAuthor">
@@ -49,6 +50,7 @@ var CommentBox = React.createClass({
       url: this.props.url,
       dataType: 'json',
       success: function (comments) {
+        //this.handleChange
         this.setState({comments: comments});
       }.bind(this),
       error: function (xhr, status, err) {
@@ -57,23 +59,33 @@ var CommentBox = React.createClass({
     })
   },
 
-  handleChange: function() {
-    var filterText = this.refs.filter.getDOMNode().value.trim();
-    var filterRegExp = new RegExp (filterText);
-    var filteredComments=this.state.comments.map(function (comment, index) {
-    if (comment.author.match(filterRegExp)||(comment.comment.match(filterRegExp)) || (comment.fingerprint.match(filterRegExp))){
+  // handleChange: function() {
+  //   var filterText = this.refs.filter.getDOMNode().value.trim();
+  //   var filterRegExp = new RegExp (filterText);
+  //   //var existingComments = this.state.comments || 
+  //   var filteredComments=this.state.comments.map(function (comment, index) {
+  //   if (comment.author.match(filterRegExp)||(comment.comment.match(filterRegExp)) || (comment.fingerprint.match(filterRegExp))){
 
-        return (
-          comment
-          )
-    }else{ 
-        return (
-          ""
-    )};
-  }.bind(this));
-    this.setState({comments: filteredComments});
+  //       return (
+  //         comment
+  //         )
+  //   }else{ 
+  //       return (
+  //         ""
+  //   )};
+  // var newComments = this.state.comments.concat([filteredComments]);
+  //   this.setState({comments: newComments});
+  // }.bind(this))      
+  // });
+    
+  //  var newComments = this.state.comments.concat([filteredComments]);
+  //   this.setState({comments: newComments});
+  // }.bind(this)),
+
+  handleUserInput: function(filterText){
+
   },
-
+  
   handleCommentSubmit: function(comment) {
     var comments = this.state.comments;
     var newComments = comments.concat([comment]);
@@ -95,9 +107,7 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         <h1>Health Records for Patient</h1>
-        <form className="filterForm" onChange={this.handleChange}>
-        <input type="text" placeholder="Type to Filter" ref="filter" />
-        </form>
+        <CommentFilter filterText={this.state.filterText} onUserInput={this.handleUserInput} /> 
         <CommentList comments={this.state.comments} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
@@ -127,6 +137,13 @@ var CommentForm = React.createClass({
       </form>
       );
   }
+});
+
+var CommentFilter = React.createClass({
+  handleChange: function(){
+    var filterText = this.refs.filter.getDOMNode().value.trim();
+  }
+
 });
 
 var ready = function () {
