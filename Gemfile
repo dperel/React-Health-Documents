@@ -17,6 +17,11 @@ gem 'active_model_serializers'
 gem 'ffaker'
 gem 'react-rails'
 gem 'responders', '~> 2.0'
+gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
+gem 'compass-colors'
+gem 'sassy-buttons'
+
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

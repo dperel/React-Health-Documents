@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/Compass/compass-rails.git
+  revision: d600de4a6c5870613aac63f32491da4771a3c982
+  branch: master
+  specs:
+    compass-rails (2.0.5)
+      compass (~> 1.0.0)
+      sass-rails (< 5.1)
+      sprockets (< 2.13)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -39,7 +49,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
-    babel-source (5.8.23)
+    babel-source (5.8.24)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
       execjs (~> 2.0)
@@ -47,6 +57,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (6.0.2)
+    chunky_png (1.3.4)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -54,13 +65,29 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.9.1.1)
+    compass (1.0.3)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.2)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-colors (0.9.0)
+      compass (>= 0.8.7)
+    compass-core (1.0.3)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
     connection_pool (2.2.0)
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
     ffaker (2.1.0)
+    ffi (1.9.10)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
@@ -108,8 +135,11 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    rb-fsevent (0.9.6)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
     rdoc (4.2.0)
-    react-rails (1.2.0)
+    react-rails (1.3.0)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
       connection_pool
@@ -125,12 +155,17 @@ GEM
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
       tilt (>= 1.1, < 3)
+    sassy-buttons (0.2.6)
+      compass (>= 0.12.2)
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
     spring (1.4.0)
-    sprockets (3.3.4)
+    sprockets (2.12.4)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
       rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
     sprockets-rails (2.3.3)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
@@ -138,7 +173,7 @@ GEM
     sqlite3 (1.3.10)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.1)
+    tilt (1.4.1)
     turbolinks (2.5.3)
       coffee-rails
     tzinfo (1.2.2)
@@ -159,6 +194,8 @@ DEPENDENCIES
   active_model_serializers
   byebug
   coffee-rails (~> 4.1.0)
+  compass-colors
+  compass-rails!
   ffaker
   jbuilder (~> 2.0)
   jquery-rails
@@ -166,6 +203,7 @@ DEPENDENCIES
   react-rails
   responders (~> 2.0)
   sass-rails (~> 5.0)
+  sassy-buttons
   sdoc (~> 0.4.0)
   spring
   sqlite3

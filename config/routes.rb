@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'verifications/new'
+
   get 'home/index'
 
   resources :comments

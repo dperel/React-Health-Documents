@@ -7,13 +7,14 @@ var Comment = React.createClass({
     return (
       <div className="comment">
         <h2 className="commentAuthor">
-          {this.props.author}
+          <a href={this.props.url}>{this.props.author}</a>
         </h2>
-          Comment aka record #{this.props.url}.
           <p>
           {this.props.comment}
           </p>
-          <a href={this.props.url}>link</a>
+          <p>
+          
+          </p>
       </div>
       );
   }
@@ -23,10 +24,9 @@ var CommentList = React.createClass({
   render: function () {
     var commentNodes = this.props.comments.map(function (comment, index) {
       return (
-        <Comment author={comment.author} comment={comment.comment} doc={comment.doc} url={"/comments/"+String(comment.id)} key={index} />
+        <Comment author={comment.author} comment={comment.comment} url={"/comments/"+String(comment.id)} key={index} />
         );
     });
-
     return (
       <div className="commentList">
         {commentNodes}
@@ -87,9 +87,9 @@ var CommentForm = React.createClass({
   handleSubmit: function() {
     var author = this.refs.author.getDOMNode().value.trim();
     var comment = this.refs.comment.getDOMNode().value.trim();
-    var doc = this.refs.doc.getDOMNode().value.trim();
-    debugger;
-    this.props.onCommentSubmit({author: author, comment: comment, doc: doc});
+    var doc = this.refs.doc.getDOMNode().value.trim()
+    var fingerprint = String(CryptoJS.SHA256(doc));
+    this.props.onCommentSubmit({author: author, comment: comment, doc: doc, fingerprint: fingerprint});
     this.refs.author.getDOMNode().value = '';
     this.refs.comment.getDOMNode().value = '';
     this.refs.doc.getDOMNode().value = '';

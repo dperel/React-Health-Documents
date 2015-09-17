@@ -1,5 +1,5 @@
 
-class CommentsController < ApplicationController
+class CommentsController < ApplicationController  
   respond_to :json
 
   def index
@@ -12,12 +12,13 @@ class CommentsController < ApplicationController
 
   def show
     @comment = Comment.find(link_params["id"])
+    @matches = Comment.verify(link_params["id"])
   end
 
   private
 
   def comment_params
-    params.require(:comment).permit(:author, :comment, :doc, :id)
+    params.require(:comment).permit(:author, :comment, :doc, :id, :fingerprint)
   end
 
   def link_params

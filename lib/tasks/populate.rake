@@ -7,7 +7,8 @@ namespace :db do
       Comment.create(
         author: FFaker::Name.first_name + " " + FFaker::Name.last_name,
         comment: FFaker::HipsterIpsum.words(10).join(' '),
-        doc: FFaker::HipsterIpsum.words(50).join(',  #')
+        doc: FFaker::HipsterIpsum.words(50).join(',  #'),
+        fingerprint: "fi2jkr932k09rk320k320e9k0f0r23kf0ewkfewkj3209fj32f"
       )
     end
   end

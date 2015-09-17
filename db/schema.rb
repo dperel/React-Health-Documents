@@ -11,14 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916215623) do
+ActiveRecord::Schema.define(version: 20150916234436) do
 
   create_table "comments", force: :cascade do |t|
     t.text     "comment"
     t.string   "author"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.binary   "doc"
+    t.string   "fingerprint"
   end
 
 end
