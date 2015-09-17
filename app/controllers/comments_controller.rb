@@ -12,7 +12,6 @@ class CommentsController < ApplicationController
 
   def show
     @comment = Comment.find(link_params["id"])
-    @matches = Comment.verify(link_params["id"])
   end
 
   def show_js

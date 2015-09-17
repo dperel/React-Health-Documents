@@ -4,29 +4,33 @@ var Comment = React.createClass({
     return (
       <div className="comment">
         <h2 className="commentAuthor">
-          <a href={this.props.url}>{this.props.author}</a>
+          <a href={this.props.url}>{this.props.id}. {this.props.author}</a>
         </h2>
+        <p> 
+        Timestamp: {this.props.created_at}.  Document identical to these documents that are already in the system: {this.props.prior_matches}. 
+
+        </p>
           <p>
-          {this.props.comment}
+            Description: {this.props.comment} 
           </p>
           <p>
-
+          <a href={this.props.blockchainURL}>Find this record on the blockchain</a>
           </p>
       </div>
       );
   }
 });
 
-
 var CommentList = React.createClass({
   render: function () {
     var commentNodes = this.props.comments.map(function (comment, index) {
       return (
-        <Comment author={comment.author} comment={comment.comment} url={"/comments/"+String(comment.id)} key={index} />
+        <Comment author={comment.author} comment={comment.comment} id={comment.id} url={"/comments/"+String(comment.id)} prior_matches={comment.prior_matches} blockchainURL={"www.blocktrail.com/"+comment.fingerprint} created_at={comment.created_at}key={index} />
         );
     });
     return (
       <div className="commentList">
+        // insert filter function here?
         {commentNodes}
       </div>
       );
@@ -50,8 +54,26 @@ var CommentBox = React.createClass({
       error: function (xhr, status, err) {
         console.error(this.props.url, status, err.toString());
       }.bind(this)
-    });
+    })
   },
+
+  handleChange: function() {
+    var filterText = this.refs.filter.getDOMNode().value.trim();
+    var filterRegExp = new RegExp (filterText);
+    var filteredComments=this.state.comments.map(function (comment, index) {
+    if (comment.author.match(filterRegExp)||(comment.comment.match(filterRegExp)) || (comment.fingerprint.match(filterRegExp))){
+
+        return (
+          comment
+          )
+    }else{ 
+        return (
+          ""
+    )};
+  }.bind(this));
+    this.setState({comments: filteredComments});
+  },
+
   handleCommentSubmit: function(comment) {
     var comments = this.state.comments;
     var newComments = comments.concat([comment]);
@@ -73,6 +95,9 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         <h1>Health Records for Patient</h1>
+        <form className="filterForm" onChange={this.handleChange}>
+        <input type="text" placeholder="Type to Filter" ref="filter" />
+        </form>
         <CommentList comments={this.state.comments} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
@@ -80,12 +105,12 @@ var CommentBox = React.createClass({
   }
 });
 
+
 var CommentForm = React.createClass({
   handleSubmit: function() {
     var author = this.refs.author.getDOMNode().value.trim();
     var comment = this.refs.comment.getDOMNode().value.trim();
     var doc = this.refs.doc.getDOMNode().value.trim()
-    //var fingerprint = String(CryptoJS.SHA256(doc));
     this.props.onCommentSubmit({author: author, comment: comment, doc: doc});
     this.refs.author.getDOMNode().value = '';
     this.refs.comment.getDOMNode().value = '';
@@ -95,9 +120,9 @@ var CommentForm = React.createClass({
   render: function() {
     return (
       <form className="commentForm" onSubmit={this.handleSubmit}>
-        <input type="text" placeholder="Your name" ref="author" />
-        <input type="text" placeholder="Say something..." ref="comment" />
-         <input type="textarea" placeholder="Your Doc" ref="doc" />
+        <input type="text" placeholder="Name of Laboratory" ref="author" />
+        <input type="text" placeholder="Summary of this Document" ref="comment" />
+         <input type="textarea" placeholder="Paste Entire Document Here" ref="doc" />
         <input type="submit" value="Post" />
       </form>
       );
@@ -106,7 +131,7 @@ var CommentForm = React.createClass({
 
 var ready = function () {
   React.render(
-    <CommentBox url="/comments.json" />,
+    <CommentBox url="/comments" />,
     document.getElementById('comments')
   );
 };
