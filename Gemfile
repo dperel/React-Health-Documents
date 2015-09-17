@@ -20,7 +20,7 @@ gem 'responders', '~> 2.0'
 gem 'compass-rails', github: "Compass/compass-rails", branch: "master"
 gem 'compass-colors'
 gem 'sassy-buttons'
-
+gem 'pry'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

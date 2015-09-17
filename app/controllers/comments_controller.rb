@@ -15,6 +15,10 @@ class CommentsController < ApplicationController
     @matches = Comment.verify(link_params["id"])
   end
 
+  def show_js
+    respond_with Comment.verify(link_params["id"] || comment_params["id"])
+  end 
+  
   private
 
   def comment_params

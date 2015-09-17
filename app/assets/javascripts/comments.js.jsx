@@ -1,9 +1,6 @@
 
 var Comment = React.createClass({
-  
-
   render: function () {
-
     return (
       <div className="comment">
         <h2 className="commentAuthor">
@@ -13,12 +10,13 @@ var Comment = React.createClass({
           {this.props.comment}
           </p>
           <p>
-          
+
           </p>
       </div>
       );
   }
 });
+
 
 var CommentList = React.createClass({
   render: function () {
@@ -58,7 +56,6 @@ var CommentBox = React.createClass({
     var comments = this.state.comments;
     var newComments = comments.concat([comment]);
     this.setState({comments: newComments});
-    debugger;
     $.ajax({
       url: this.props.url,
       dataType: 'json',
@@ -75,7 +72,7 @@ var CommentBox = React.createClass({
   render: function () {
     return (
       <div className="commentBox">
-        <h1>Comments</h1>
+        <h1>Health Records for Patient</h1>
         <CommentList comments={this.state.comments} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
@@ -88,8 +85,8 @@ var CommentForm = React.createClass({
     var author = this.refs.author.getDOMNode().value.trim();
     var comment = this.refs.comment.getDOMNode().value.trim();
     var doc = this.refs.doc.getDOMNode().value.trim()
-    var fingerprint = String(CryptoJS.SHA256(doc));
-    this.props.onCommentSubmit({author: author, comment: comment, doc: doc, fingerprint: fingerprint});
+    //var fingerprint = String(CryptoJS.SHA256(doc));
+    this.props.onCommentSubmit({author: author, comment: comment, doc: doc});
     this.refs.author.getDOMNode().value = '';
     this.refs.comment.getDOMNode().value = '';
     this.refs.doc.getDOMNode().value = '';
