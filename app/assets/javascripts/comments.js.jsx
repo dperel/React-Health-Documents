@@ -1,7 +1,6 @@
 
 var Comment = React.createClass({
   render: function () {
-    debugger;
     return (
       <div className="comment">
         <h2 className="commentAuthor">
@@ -59,33 +58,6 @@ var CommentBox = React.createClass({
     })
   },
 
-  // handleChange: function() {
-  //   var filterText = this.refs.filter.getDOMNode().value.trim();
-  //   var filterRegExp = new RegExp (filterText);
-  //   //var existingComments = this.state.comments || 
-  //   var filteredComments=this.state.comments.map(function (comment, index) {
-  //   if (comment.author.match(filterRegExp)||(comment.comment.match(filterRegExp)) || (comment.fingerprint.match(filterRegExp))){
-
-  //       return (
-  //         comment
-  //         )
-  //   }else{ 
-  //       return (
-  //         ""
-  //   )};
-  // var newComments = this.state.comments.concat([filteredComments]);
-  //   this.setState({comments: newComments});
-  // }.bind(this))      
-  // });
-    
-  //  var newComments = this.state.comments.concat([filteredComments]);
-  //   this.setState({comments: newComments});
-  // }.bind(this)),
-
-  handleUserInput: function(filterText){
-
-  },
-  
   handleCommentSubmit: function(comment) {
     var comments = this.state.comments;
     var newComments = comments.concat([comment]);
@@ -107,7 +79,6 @@ var CommentBox = React.createClass({
     return (
       <div className="commentBox">
         <h1>Health Records for Patient</h1>
-        <CommentFilter filterText={this.state.filterText} onUserInput={this.handleUserInput} /> 
         <CommentList comments={this.state.comments} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
@@ -139,12 +110,6 @@ var CommentForm = React.createClass({
   }
 });
 
-var CommentFilter = React.createClass({
-  handleChange: function(){
-    var filterText = this.refs.filter.getDOMNode().value.trim();
-  }
-
-});
 
 var ready = function () {
   React.render(

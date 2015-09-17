@@ -17809,3 +17809,104 @@ Started GET "/comments" for ::1 at 2015-09-17 18:08:07 -0400
 Processing by CommentsController#index as JSON
   [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments"
 Completed 200 OK in 16ms (Views: 7.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:53:46 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (2.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 1622ms (Views: 1608.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/comments-608e22be68d9d74750f8c783c852f567.js?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/assets/application-ef8c09019572d867f16abecfb0950187.js?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:53:48 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:53:48 -0400
+Processing by CommentsController#index as JSON
+  [1m[35mComment Load (5.9ms)[0m  SELECT "comments".* FROM "comments"
+Completed 200 OK in 48ms (Views: 23.9ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-17 18:53:59 -0400
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 808ms (Views: 807.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7ff8db3d3c31eedee07387699d175dd0.css?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/assets/jquery_ujs-51a93580db56f69a2d5a3e84acba849d.js?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/assets/comments-688f2c2780ca40384452b892491c6e11.js?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/assets/development/react-1acd1dbd8a1da31b6715a95c03adde70.js?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/assets/jquery-4d9426663b39364fe6163dd73cda46fe.js?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/assets/turbolinks-66caf332a29ac6aad04c1521e68666a9.js?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/assets/application-d59ab2e3b707ed9bf56f08cd5f57393a.js?body=1" for ::1 at 2015-09-17 18:54:00 -0400
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:54:00 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 19ms (Views: 10.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/comments" for ::1 at 2015-09-17 18:54:07 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"David", "comment"=>"David", "doc"=>"Report"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "doc", "created_at", "updated_at", "fingerprint") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David"], ["comment", "David"], ["doc", "<6 bytes of binary data>"], ["created_at", "2015-09-17 22:54:07.706447"], ["updated_at", "2015-09-17 22:54:07.706447"], ["fingerprint", "b6ce788d9786917c9d19adaa0d904213365607c7f683d7277f508dcf142b4cc2"]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."fingerprint" = ?  ORDER BY "comments"."id" ASC LIMIT 1000  [["fingerprint", "b6ce788d9786917c9d19adaa0d904213365607c7f683d7277f508dcf142b4cc2"]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "comments" SET "author" = ?, "comment" = ?, "doc" = ?, "created_at" = ?, "updated_at" = ?, "fingerprint" = ?, "id" = ?, "prior_matches" = ? WHERE "comments"."id" = ?[0m  [["author", "David"], ["comment", "David"], ["doc", "<6 bytes of binary data>"], ["created_at", "2015-09-17 22:54:07.706447"], ["updated_at", "2015-09-17 22:54:07.706447"], ["fingerprint", "b6ce788d9786917c9d19adaa0d904213365607c7f683d7277f508dcf142b4cc2"], ["id", 74], ["prior_matches", "[]"], ["id", 74]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Completed 201 Created in 56ms (Views: 5.4ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:54:07 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 8ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/comments" for ::1 at 2015-09-17 18:54:20 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"comment"=>{"author"=>"David2", "comment"=>"David", "doc"=>"Report"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "comments" ("author", "comment", "doc", "created_at", "updated_at", "fingerprint") VALUES (?, ?, ?, ?, ?, ?)[0m  [["author", "David2"], ["comment", "David"], ["doc", "<6 bytes of binary data>"], ["created_at", "2015-09-17 22:54:21.003757"], ["updated_at", "2015-09-17 22:54:21.003757"], ["fingerprint", "b6ce788d9786917c9d19adaa0d904213365607c7f683d7277f508dcf142b4cc2"]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT  "comments".* FROM "comments" WHERE "comments"."fingerprint" = ?  ORDER BY "comments"."id" ASC LIMIT 1000  [["fingerprint", "b6ce788d9786917c9d19adaa0d904213365607c7f683d7277f508dcf142b4cc2"]]
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "comments" SET "author" = ?, "comment" = ?, "doc" = ?, "created_at" = ?, "updated_at" = ?, "fingerprint" = ?, "id" = ?, "prior_matches" = ? WHERE "comments"."id" = ?[0m  [["author", "David2"], ["comment", "David"], ["doc", "<6 bytes of binary data>"], ["created_at", "2015-09-17 22:54:21.003757"], ["updated_at", "2015-09-17 22:54:21.003757"], ["fingerprint", "b6ce788d9786917c9d19adaa0d904213365607c7f683d7277f508dcf142b4cc2"], ["id", 75], ["prior_matches", "[74]"], ["id", 75]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 201 Created in 20ms (Views: 2.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/comments" for ::1 at 2015-09-17 18:54:21 -0400
+Processing by CommentsController#index as JSON
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+Completed 200 OK in 11ms (Views: 5.4ms | ActiveRecord: 0.3ms)
