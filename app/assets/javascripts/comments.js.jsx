@@ -4,15 +4,33 @@ var Comment = React.createClass({
     return (
       <div className="comment">
         <h2 className="commentAuthor">
-          <a href={this.props.url}>{this.props.id}. {this.props.author}</a>
+          <a href={this.props.url}>{this.props.author}</a>
         </h2>
-        <p> 
-        Timestamp: {this.props.created_at}.  Document identical to these documents that are already in the system: {this.props.prior_matches}. 
-
-        </p>
-          <p>
+        <p>
             Description: {this.props.comment} 
           </p>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Document ID#</th>
+              <th>Timestamp</th>
+              <th>Blockchain Link</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{this.props.id}</td>
+              <td>{this.props.created_at}</td>
+              <td> <a href={this.props.blockchainURL}>Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+        <strong>Matches</strong>: Records with ID numbers {this.props.prior_matches} are identical to this record. 
+        </p>
+          
           <p>
           <a href={this.props.blockchainURL}>Find this record on the blockchain</a>
           </p>
@@ -30,7 +48,6 @@ var CommentList = React.createClass({
     });
     return (
       <div className="commentList">
-        // insert filter function here?
         {commentNodes}
       </div>
       );
@@ -78,7 +95,7 @@ var CommentBox = React.createClass({
   render: function () {
     return (
       <div className="commentBox">
-        <h1>Health Records for Patient</h1>
+        <h1>My Health Records</h1>
         <CommentList comments={this.state.comments} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>

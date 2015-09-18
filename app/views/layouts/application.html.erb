@@ -5,6 +5,32 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Montserrat::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  <script type="text/javascript">
+    (function() {
+        var link_element = document.createElement("link"),
+            s = document.getElementsByTagName("script")[0];
+        if (window.location.protocol !== "http:" && window.location.protocol !== "https:") {
+            link_element.href = "http:";
+        }
+        link_element.href += "//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800";
+        link_element.rel = "stylesheet";
+        link_element.type = "text/css";
+        s.parentNode.insertBefore(link_element, s);
+    })();
+</script>
 </head>
 <body>
 
