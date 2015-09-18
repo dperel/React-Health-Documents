@@ -9,7 +9,7 @@ Frontend built with React JS
 Backend in Ruby on Rails 
 
 
-This project incorporates the relevant features of a blockchain, although it was limited by the time I could put into it and several other factors. 
+Features, and a few issues: 
 
 **Health Record Authenticity:** I use a SHA-256 hash stored as an attribute of each health record as a fingerprint of its authenticity. When you upload a new document, the app generates a fingerprint and alerts you if it matches the fingerprint of prior uploads. This way, a doctor or patient can determine if the record they have (maybe passed to them from an insurance company or from an outpatient facility's record system) is the same as the one the lab or hospital uploaded. 
 
