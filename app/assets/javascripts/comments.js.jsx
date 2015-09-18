@@ -1,3 +1,7 @@
+//Comment class should be Record
+//author attribute should be title. 
+//This was my first time using React, and I built these components after reading several tutorials. One that used Comments was the first to actually render. 
+
 var redStyle = {
   color: 'red'
 }
@@ -43,7 +47,7 @@ var CommentList = React.createClass({
   render: function () {
     var commentNodes = this.props.comments.map(function (comment, index) {
       return (
-        <Comment author={comment.author} comment={comment.comment} id={comment.id} url={"/comments/"+String(comment.id)} prior_matches={comment.prior_matches} blockchainURL={"www.blocktrail.com/"+comment.fingerprint} created_at={comment.created_at}key={index} />
+        <Comment author={comment.author} comment={comment.comment} id={comment.id} url={"/comments/"+String(comment.id)} prior_matches={comment.prior_matches} blockchainURL={"https://blockexplorer.com/tx/46d45f75eca97b116846ef30e0502389bb43cae9d94665fc0684c6773d94133f"} created_at={comment.created_at}key={index} />
         );
     });
     return (
@@ -118,15 +122,17 @@ var CommentForm = React.createClass({
   render: function() {
     return (
       <form className="commentForm" onSubmit={this.handleSubmit}>
-        <h3>Submit a new record</h3>
+        <h2>Submit a new record</h2>
+        
         <p> 
-        <input type="text" placeholder="Name of Laboratory" ref="author" />
+        Name of Laboratory: <input type="text" placeholder="Eg, 'Downtown Hospital Outpatient Group'" ref="author" />
+        </p>
+       
+        <p>
+         Summary of Record: <input type="text" placeholder="Eg, 'X-ray indicates minor swelling...'" ref="comment" />
         </p>
         <p>
-        <input type="text" placeholder="Summary of Record" ref="comment" />
-        </p>
-        <p>
-        <input type="textarea" placeholder="Paste Entire Document Here" ref="doc" />
+         Paste Entire Document Here: <input type="textarea" placeholder="Paste CCDA File Text" ref="doc" />
         </p>
         <input type="submit" value="Add Record" />
       </form>
@@ -142,4 +148,3 @@ var ready = function () {
   );
 };
 
-$(document).ready(ready);
