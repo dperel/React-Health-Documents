@@ -20,7 +20,7 @@ table {
 
 th {
     text-align: center;
-    border-bottom: 1px solid black;
+    
 }
 
 td {
@@ -28,6 +28,7 @@ td {
 }
 
 div.commentBox {
+  border-radius: 45px;
   background: #FFFFFF;
   width: 70%;
   margin: auto;
@@ -47,6 +48,9 @@ div.comment {
   width: 100%;
   margin: auto;
   line-height: 20px;
+  border-bottom: 4px solid black;
+
+
 }
 
 form {

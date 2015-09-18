@@ -10,13 +10,15 @@ var Comment = React.createClass({
           <a href={this.props.url}>{this.props.author}</a>
         </h2>
         <p>
-            Description: {this.props.comment} 
-          </p>
-        
+           {this.props.comment} 
+        </p>
+         <p>
+        <strong style={redStyle}>Matches</strong>: Uploads with ID numbers {this.props.prior_matches} are identical to this. 
+        </p>
         <table>
           <thead>
             <tr style={redStyle}>
-              <th>Document ID#</th>
+              <th>Document ID</th>
               <th>Timestamp</th>
               <th>Blockchain Proof</th>
               </tr>
@@ -30,9 +32,8 @@ var Comment = React.createClass({
           </tbody>
         </table>
 
-        <p>
-        <strong style={redStyle}>Matches</strong>: Records with ID numbers {this.props.prior_matches} are identical to this. 
-        </p>
+       <p>
+       </p>
       </div>
       );
   }
