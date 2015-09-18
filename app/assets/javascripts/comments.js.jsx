@@ -1,3 +1,6 @@
+var redStyle = {
+  color: 'red'
+}
 
 var Comment = React.createClass({
   render: function () {
@@ -12,10 +15,10 @@ var Comment = React.createClass({
         
         <table>
           <thead>
-            <tr>
+            <tr style={redStyle}>
               <th>Document ID#</th>
               <th>Timestamp</th>
-              <th>Blockchain Link</th>
+              <th>Blockchain Proof</th>
               </tr>
           </thead>
           <tbody>
@@ -28,12 +31,8 @@ var Comment = React.createClass({
         </table>
 
         <p>
-        <strong>Matches</strong>: Records with ID numbers {this.props.prior_matches} are identical to this record. 
+        <strong style={redStyle}>Matches</strong>: Records with ID numbers {this.props.prior_matches} are identical to this. 
         </p>
-          
-          <p>
-          <a href={this.props.blockchainURL}>Find this record on the blockchain</a>
-          </p>
       </div>
       );
   }
@@ -95,7 +94,7 @@ var CommentBox = React.createClass({
   render: function () {
     return (
       <div className="commentBox">
-        <h1>My Health Records</h1>
+        <h1>My Health Blockchain</h1>
         <CommentList comments={this.state.comments} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit}/>
       </div>
@@ -118,10 +117,17 @@ var CommentForm = React.createClass({
   render: function() {
     return (
       <form className="commentForm" onSubmit={this.handleSubmit}>
+        <h3>Submit a new record</h3>
+        <p> 
         <input type="text" placeholder="Name of Laboratory" ref="author" />
-        <input type="text" placeholder="Summary of this Document" ref="comment" />
-         <input type="textarea" placeholder="Paste Entire Document Here" ref="doc" />
-        <input type="submit" value="Post" />
+        </p>
+        <p>
+        <input type="text" placeholder="Summary of Record" ref="comment" />
+        </p>
+        <p>
+        <input type="textarea" placeholder="Paste Entire Document Here" ref="doc" />
+        </p>
+        <input type="submit" value="Add Record" />
       </form>
       );
   }
